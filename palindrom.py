@@ -1,8 +1,10 @@
+
 def remove_ignored(napis):
     new_chars = []
     for char in napis:
         ascii_nr = ord(char)
         # print(f"char: {char} ascii: {ascii_nr}")
+        
         if 97 <= ascii_nr <= 122 or 48 <= ascii_nr <= 57:
             new_chars.append(char)
     return "".join(new_chars)
@@ -15,9 +17,8 @@ def palindrom_check(napis):
     index_end = int(len(nowy_napis)/2 )
     for index in range(index_start, index_end):
         if nowy_napis[index] != nowy_napis[len(nowy_napis) -1 -index]:
-            return False
-    return True
 
 
-for napis in ('aabbaa', 'kAja;;;;K', 'abba abba abba', 'niedziala'):
-    print(f" {napis} : {palindrom_check(napis)}")
+
+
+for napis in ('a,,abba!!!!a', 'kAjaK', 'abba!!!,.,., abba abba', 'niedziala', "aa   !!!,,...!!??$$  aa"):
