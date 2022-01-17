@@ -21,3 +21,4 @@ def palindrom_check(napis):
 
 for napis in ('aabbaa', 'kAja;;;;K', 'abba abba abba', 'niedziala'):
     print(f" {napis} : {palindrom_check(napis)}")
+    
